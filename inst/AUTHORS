@@ -1,0 +1,23 @@
+Dirk Eddelbuettel created this package, and included the file
+R/roboto-condensed.R from the hrbrthemes package.
+
+Bob Rudis is the author and maintainer of the 'hrbrthemes' package and
+sole contributor to the file included here.
+
+The hrbrthemes package lists the following contributors and copyright
+holders we include in an abundance of caution here too even though
+their work may not actually be contained in this package:
+      Patrick Kennedy
+      Philipp Reiner
+      Dan Wilson
+      Xavier Adam
+      Google (for the Roboto Condensed & Titillium Web Fonts)
+      IBM (for the Plex Sans Fon)
+      Goldman Sachs (for the Goldman Sans Font)
+      Impallari Type (for the Public Sans Font)
+      Jacob Barnett
+      Thomas J. Leeper
+      Joris Meys
+
+In particular, this package does not contain fonts or fonts installer.
+See the 'hrbrthemes' package for these.
