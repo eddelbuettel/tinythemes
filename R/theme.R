@@ -30,9 +30,11 @@
 #' @param axis_col axis color
 #' @param axis add x or y axes? `TRUE`, `FALSE`, "`xy`"
 #' @param ticks ticks if `TRUE` add ticks
-#' @examples \dontrun{
+#' @return A [ggplot2]-compatible 'theme' data structure is returned for use in standard
+#' [ggplot2] usage.
+#' @examples
+#' if (interactive()) {  # default postscript device used in tests does not have font
 #' library(ggplot2)
-#' library(dplyr)
 #'
 #' # seminal scatterplot
 #' ggplot(mtcars, aes(mpg, wt)) +
@@ -49,10 +51,10 @@
 #' if (Sys.info()[["sysname"]] == "Windows")
 #'   update_geom_font_defaults(family=font_rc_light)
 #'
-#' count(mpg, class) %>%
-#'   ggplot(aes(class, n)) +
+#' data.frame(table(mpg$class)) |>
+#'   ggplot(aes(x = Var1, y = Freq)) +
 #'   geom_col() +
-#'   geom_text(aes(label=n), nudge_y=3) +
+#'   geom_text(aes(label = Freq), nudge_y = 3) +
 #'   labs(x="Fuel effiiency (mpg)", y="Weight (tons)",
 #'        title="Seminal ggplot2 bar chart example",
 #'        subtitle="A plot that is only useful for demonstration purposes",

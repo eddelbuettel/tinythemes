@@ -71,6 +71,10 @@ theme_ipsum_rc(
 
 \item{ticks}{ticks if \code{TRUE} add ticks}
 }
+\value{
+A \link{ggplot2}-compatible 'theme' data structure is returned for use in standard
+\link{ggplot2} usage.
+}
 \description{
 You should \code{\link[hrbrthemes:import_roboto_condensed]{hrbrthemes::import_roboto_condensed()}} first and also install the fonts on your
 system before trying to use this theme.
@@ -88,9 +92,8 @@ than Arial Narrow and the fonts most folks use in ggplot2 charts.
 }
 
 \examples{
-\dontrun{
+if (interactive()) {  # default postscript device used in tests does not have font
 library(ggplot2)
-library(dplyr)
 
 # seminal scatterplot
 ggplot(mtcars, aes(mpg, wt)) +
@@ -107,10 +110,10 @@ ggplot(mtcars, aes(mpg, wt)) +
 if (Sys.info()[["sysname"]] == "Windows")
   update_geom_font_defaults(family=font_rc_light)
 
-count(mpg, class) \%>\%
-  ggplot(aes(class, n)) +
+data.frame(table(mpg$class)) |>
+  ggplot(aes(x = Var1, y = Freq)) +
   geom_col() +
-  geom_text(aes(label=n), nudge_y=3) +
+  geom_text(aes(label = Freq), nudge_y = 3) +
   labs(x="Fuel effiiency (mpg)", y="Weight (tons)",
        title="Seminal ggplot2 bar chart example",
        subtitle="A plot that is only useful for demonstration purposes",

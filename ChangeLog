@@ -1,0 +1,14 @@
+2023-12-15  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.0.1
+	* R/themes.R: Switch to protecting example via 'if (interactive())'
+	as font is missing when in headless use plotting to postscript device
+
+2023-12-11  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/themes.R: Import 'theme_ipsum_rc()' from hrbrthemes, apply some polish
+	* man/theme_ipsum_rc.Rd: Generated after small fixes
+	* man/tinythemes-package.Rd: Auto-generated stanza
+	* LICENSE: Full credit to Bob Rudis
+	* NAMESPACE: Import only ggplot2
+	* DESCRIPTION: New minimal package from pkgKitten::kitten()
