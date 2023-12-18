@@ -1,3 +1,8 @@
+2023-12-18  Dirk Eddelbuettel  <edd@debian.org>
+
+	* .github/workflows/r2u.yaml: Added
+	* ChangeLog: Added
+
 2023-12-15  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Release 0.0.1
