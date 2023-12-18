@@ -1,5 +1,5 @@
 
-## tinythemes -- A Low-Dependency Package Containing ggplot2 Themes
+## tinythemes -- Lightweight Repackaging of ggplot2 Themes
 
 [![CI](https://github.com/eddelbuettel/tinythemes/actions/workflows/r2u.yaml/badge.svg)](https://github.com/eddelbuettel/tinythemes/actions/workflows/r2u.yaml)
 [![License](https://img.shields.io/badge/License-MIT-orange.svg)](https://opensource.org/licenses/MIT)
@@ -8,13 +8,13 @@
 [![Dependencies](https://tinyverse.netlify.com/badge/tinythemes)](https://cran.r-project.org/package=tinythemes)
 [![Last Commit](https://img.shields.io/github/last-commit/eddelbuettel/tinythemes)](https://github.com/eddelbuettel/tinythemes)
 
-## Example: Without, and With, The Theme 
+### Example: Without, and With, The Theme 
 
 ![](https://eddelbuettel.github.io/images/2023-12-18/tinythemes_demo.png)
 
 One the left are `ggplot()` defaults, on the right the theme is added.
 
-## Motivation
+### Motivation
 
 The [hrbrthemes][hrbrthemes] package contains a nice theme as seen in the preceding example. 
 Installing the package, however, comes at cost of fourty-nine (yeah, really) additional packages:
@@ -47,6 +47,11 @@ So this package goes the other way and currently contains only _one_ theme: `the
 taken from [hrbrthemes][hrbrthemes] and minimally polished. 
 Installing this package from CRAN results in zero additional dependencies.
 
+### What If Something Goes Wrong?
+
+Good question. This package is for when you know the Roboto Condensed font is in fact present and
+ready to be used. Package [hrbrthemes][hrbrthemes] has some documentation and helpers about what to
+do when that is not the case; consult that documentation first.
 
 ### Author
 
