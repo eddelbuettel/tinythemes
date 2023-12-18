@@ -1,5 +1,7 @@
 2023-12-18  Dirk Eddelbuettel  <edd@debian.org>
 
+	* README.md: Added with demo chart and motivation
+	* demo/theme.R: Simple demo without / with the theme
 	* .github/workflows/r2u.yaml: Added
 	* ChangeLog: Added
 
