@@ -1,16 +1,14 @@
 #' A precise & pristine [ggplot2] theme with opinionated defaults and an emphasis on typography
 #'
-#' You should [hrbrthemes::import_roboto_condensed()] first and also install the fonts on your
-#' system before trying to use this theme.
-#'
-#' There is an option `hrbrthemes.loadfonts` which -- if set to `TRUE` -- will
+#' You should consult the documentation of the [hrbrthemes] package if the font does not load
+#' properly. There is an option `hrbrthemes.loadfonts` which -- if set to `TRUE` -- will
 #' call `extrafont::loadfonts()` to register non-core fonts with R PDF & PostScript
 #' devices. If you are running under Windows, the package calls the same function
 #' to register non-core fonts with the Windows graphics device.
 #'
 #' @md
 #' @section Why Roboto Condensed?:
-#' It's free, has tolerable kerning pairs and multiple weights. It's also different
+#' It is free, has tolerable kerning pairs and multiple weights. It is also different
 #' than Arial Narrow and the fonts most folks use in ggplot2 charts.
 #'
 #' @md
@@ -64,8 +62,7 @@
 #' }
 #' @import ggplot2
 #' @export
-theme_ipsum_rc <- function(
-  base_family="Roboto Condensed", base_size = 11.5,
+theme_ipsum_rc <- function(base_family="Roboto Condensed", base_size = 11.5,
   plot_title_family=base_family, plot_title_size = 18,
   plot_title_face="bold", plot_title_margin = 10,
   subtitle_family=if (.Platform$OS.type == "windows") "Roboto Condensed" else "Roboto Condensed Light",

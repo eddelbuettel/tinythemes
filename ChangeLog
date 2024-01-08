@@ -1,3 +1,8 @@
+2024-01-08  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/theme.R: Minor edits
+	* man/theme_ipsum_rc.Rd: Regenerated
+
 2023-12-18  Dirk Eddelbuettel  <edd@debian.org>
 
 	* README.md: Added with demo chart and motivation
