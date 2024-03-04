@@ -1,8 +1,8 @@
 Package: tinythemes
 Type: Package
 Title: Lightweight Repackaging of 'Themes' for 'ggplot2'
-Version: 0.0.1.1
-Date: 2023-12-18
+Version: 0.0.2
+Date: 2024-03-04
 Authors@R: c(person(given = "Dirk", family = "Eddelbuettel",
                     role = c("aut", "cre"), email = "edd@debian.org",
                     comment = c(ORCID = "0000-0001-6419-907X")),
@@ -18,5 +18,5 @@ BugReports: https://github.com/eddelbuettel/tinythemes/issues
 License: MIT + file LICENSE
 Imports: ggplot2
 Suggests: hrbrthemes, patchwork
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
 Encoding: UTF-8

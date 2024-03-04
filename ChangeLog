@@ -1,3 +1,10 @@
+2024-03-04  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.0.2
+	* R/theme.R: Updated for ggplot2 3.5.0, typos fixed
+	* man/theme_ipsum_rc.Rd: Regenerated
+	* inst/NEWS.Rd: Added
+
 2024-01-08  Dirk Eddelbuettel  <edd@debian.org>
 
 	* R/theme.R: Minor edits

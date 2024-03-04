@@ -55,7 +55,7 @@ theme_ipsum_rc(
 
 \item{axis_title_family, axis_title_face, axis_title_size}{axis title font family, face and size}
 
-\item{axis_title_just}{axis title font justificationk one of \verb{[blmcrt]}}
+\item{axis_title_just}{axis title font justification one of \verb{[blmcrt]}}
 
 \item{plot_margin}{plot margin (specify with \link[ggplot2:element]{ggplot2::margin})}
 
@@ -76,7 +76,7 @@ A \link{ggplot2}-compatible 'theme' data structure is returned for use in standa
 \link{ggplot2} usage.
 }
 \description{
-You should consult the documentation of the \link{hrbrthemes} package if the font does not load
+You should consult the documentation of the \pkg{hrbrthemes} package if the font does not load
 properly. There is an option \code{hrbrthemes.loadfonts} which -- if set to \code{TRUE} -- will
 call \code{extrafont::loadfonts()} to register non-core fonts with R PDF & PostScript
 devices. If you are running under Windows, the package calls the same function
@@ -95,7 +95,7 @@ library(ggplot2)
 # seminal scatterplot
 ggplot(mtcars, aes(mpg, wt)) +
   geom_point() +
-  labs(x="Fuel effiiency (mpg)", y="Weight (tons)",
+  labs(x="Fuel efficiency (mpg)", y="Weight (tons)",
        title="Seminal ggplot2 scatterplot example",
        subtitle="A plot that is only useful for demonstration purposes",
        caption="Brought to you by the letter 'g'") +
@@ -110,8 +110,8 @@ if (Sys.info()[["sysname"]] == "Windows")
 data.frame(table(mpg$class)) |>
   ggplot(aes(x = Var1, y = Freq)) +
   geom_col() +
-  geom_text(aes(label = Freq), nudge_y = 3) +
-  labs(x="Fuel effiiency (mpg)", y="Weight (tons)",
+  geom_text(aes(label = Freq), nudge_y=3) +
+  labs(x="Fuel efficiency (mpg)", y="Weight (tons)",
        title="Seminal ggplot2 bar chart example",
        subtitle="A plot that is only useful for demonstration purposes",
        caption="Brought to you by the letter 'g'") +
