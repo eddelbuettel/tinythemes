@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/License-MIT-orange.svg)](https://opensource.org/licenses/MIT)
 [![CRAN](https://www.r-pkg.org/badges/version/tinythemes)](https://cran.r-project.org/package=tinythemes)
 [![r-universe](https://eddelbuettel.r-universe.dev/badges/tinythemes)](https://eddelbuettel.r-universe.dev/tinythemes)
-[![Dependencies](https://tinyverse.netlify.com/badge/tinythemes)](https://cran.r-project.org/package=tinythemes)
+[![Dependencies](https://tinyverse.netlify.app/badge/tinythemes)](https://cran.r-project.org/package=tinythemes)
 [![Last Commit](https://img.shields.io/github/last-commit/eddelbuettel/tinythemes)](https://github.com/eddelbuettel/tinythemes)
 
 ### Example: Without, and With, The Theme 
