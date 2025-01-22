@@ -1,4 +1,4 @@
-#' A precise & pristine [ggplot2] theme with opinionated defaults and an emphasis on typography
+#' A precise & pristine \pkg{ggplot2} theme with opinionated defaults and an emphasis on typography
 #'
 #' You should consult the documentation of the \pkg{hrbrthemes} package if the font does not load
 #' properly. There is an option `hrbrthemes.loadfonts` which -- if set to `TRUE` -- will

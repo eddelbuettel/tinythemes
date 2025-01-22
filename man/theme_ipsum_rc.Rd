@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme.R
 \name{theme_ipsum_rc}
 \alias{theme_ipsum_rc}
-\title{A precise & pristine \link{ggplot2} theme with opinionated defaults and an emphasis on typography}
+\title{A precise & pristine \pkg{ggplot2} theme with opinionated defaults and an emphasis on typography}
 \usage{
 theme_ipsum_rc(
   base_family = "Roboto Condensed",
@@ -41,7 +41,7 @@ theme_ipsum_rc(
 \arguments{
 \item{base_family, base_size}{base font family and size}
 
-\item{plot_title_family, plot_title_face, plot_title_size, plot_title_margin}{plot tilte family, face, size and margin}
+\item{plot_title_family, plot_title_face, plot_title_size, plot_title_margin}{plot title family, face, size and margin}
 
 \item{subtitle_family, subtitle_face, subtitle_size}{plot subtitle family, face and size}
 
