@@ -1,10 +1,11 @@
-#' A precise & pristine \pkg{ggplot2} theme with opinionated defaults and an emphasis on typography
+#' A precise & pristine \link[ggplot2]{ggplot2} theme with opinionated defaults and an
+#' emphasis on typography
 #'
-#' You should consult the documentation of the \pkg{hrbrthemes} package if the font does not load
-#' properly. There is an option `hrbrthemes.loadfonts` which -- if set to `TRUE` -- will
-#' call `extrafont::loadfonts()` to register non-core fonts with R PDF & PostScript
-#' devices. If you are running under Windows, the package calls the same function
-#' to register non-core fonts with the Windows graphics device.
+#' You should consult the documentation of the \link[hrbrthemes]{hrbrthemes} package if
+#' the font does not load properly. There is an option `hrbrthemes.loadfonts` which -- if
+#' set to `TRUE` -- will call `extrafont::loadfonts()` to register non-core fonts with R
+#' PDF & PostScript devices. If you are running under Windows, the package calls the same
+#' function to register non-core fonts with the Windows graphics device.
 #'
 #' @md
 #' @section Why Roboto Condensed?:
@@ -21,15 +22,15 @@
 #' @param axis_title_family,axis_title_face,axis_title_size axis title font family, face and size
 #' @param axis_title_just axis title font justification one of `[blmcrt]`
 #' @param axis_text_size font size of axis text
-#' @param plot_margin plot margin (specify with [ggplot2::margin])
+#' @param plot_margin plot margin (specify with \link[ggplot2]{margin})
 #' @param panel_spacing panel spacing (use `unit()`)
 #' @param grid_col grid color
 #' @param grid panel grid (`TRUE`, `FALSE`, or a combination of `X`, `x`, `Y`, `y`)
 #' @param axis_col axis color
 #' @param axis add x or y axes? `TRUE`, `FALSE`, "`xy`"
 #' @param ticks ticks if `TRUE` add ticks
-#' @return A [ggplot2]-compatible 'theme' data structure is returned for use in standard
-#' [ggplot2] usage.
+#' @return A \link[ggplot2]{ggplot2}-compatible 'theme' data structure is returned for use in standard
+#' \link[ggplot2]{ggplot2} usage.
 #' @examples
 #' if (interactive()) {  # default postscript device used in tests does not have font
 #' library(ggplot2)
@@ -49,8 +50,7 @@
 #' if (Sys.info()[["sysname"]] == "Windows")
 #'   update_geom_font_defaults(family=font_rc_light)
 #'
-#' data.frame(table(mpg$class)) |>
-#'   ggplot(aes(x = Var1, y = Freq)) +
+#' ggplot(table(mpg$class), aes(x = Var1, y = Freq)) +
 #'   geom_col() +
 #'   geom_text(aes(label = Freq), nudge_y=3) +
 #'   labs(x="Fuel efficiency (mpg)", y="Weight (tons)",

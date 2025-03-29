@@ -2,7 +2,8 @@
 % Please edit documentation in R/theme.R
 \name{theme_ipsum_rc}
 \alias{theme_ipsum_rc}
-\title{A precise & pristine \pkg{ggplot2} theme with opinionated defaults and an emphasis on typography}
+\title{A precise & pristine \link[ggplot2]{ggplot2} theme with opinionated defaults and an
+emphasis on typography}
 \usage{
 theme_ipsum_rc(
   base_family = "Roboto Condensed",
@@ -57,7 +58,7 @@ theme_ipsum_rc(
 
 \item{axis_title_just}{axis title font justification one of \verb{[blmcrt]}}
 
-\item{plot_margin}{plot margin (specify with \link[ggplot2:element]{ggplot2::margin})}
+\item{plot_margin}{plot margin (specify with \link[ggplot2]{margin})}
 
 \item{panel_spacing}{panel spacing (use \code{unit()})}
 
@@ -72,15 +73,15 @@ theme_ipsum_rc(
 \item{ticks}{ticks if \code{TRUE} add ticks}
 }
 \value{
-A \link{ggplot2}-compatible 'theme' data structure is returned for use in standard
-\link{ggplot2} usage.
+A \link[ggplot2]{ggplot2}-compatible 'theme' data structure is returned for use in standard
+\link[ggplot2]{ggplot2} usage.
 }
 \description{
-You should consult the documentation of the \pkg{hrbrthemes} package if the font does not load
-properly. There is an option \code{hrbrthemes.loadfonts} which -- if set to \code{TRUE} -- will
-call \code{extrafont::loadfonts()} to register non-core fonts with R PDF & PostScript
-devices. If you are running under Windows, the package calls the same function
-to register non-core fonts with the Windows graphics device.
+You should consult the documentation of the \link[hrbrthemes]{hrbrthemes} package if
+the font does not load properly. There is an option \code{hrbrthemes.loadfonts} which -- if
+set to \code{TRUE} -- will call \code{extrafont::loadfonts()} to register non-core fonts with R
+PDF & PostScript devices. If you are running under Windows, the package calls the same
+function to register non-core fonts with the Windows graphics device.
 }
 \section{Why Roboto Condensed?}{
 
@@ -107,8 +108,7 @@ ggplot(mtcars, aes(mpg, wt)) +
 if (Sys.info()[["sysname"]] == "Windows")
   update_geom_font_defaults(family=font_rc_light)
 
-data.frame(table(mpg$class)) |>
-  ggplot(aes(x = Var1, y = Freq)) +
+ggplot(table(mpg$class), aes(x = Var1, y = Freq)) +
   geom_col() +
   geom_text(aes(label = Freq), nudge_y=3) +
   labs(x="Fuel efficiency (mpg)", y="Weight (tons)",
