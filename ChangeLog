@@ -1,6 +1,8 @@
-2025-01-22  Dirk Eddelbuettel  <edd@debian.org>
+2025-03-29  Dirk Eddelbuettel  <edd@debian.org>
 
-	* R/theme.R: Replace \link{} with \pkg{} to avoid requiring reference
+	* DESCRIPTION (Version, Date): Release 0.0.3
+
+	* R/theme.R: Use proper anchors; rewrote example without '|>'
 	* man/theme_ipsum_rc.Rd: Regenerated
 
 2024-05-31  Dirk Eddelbuettel  <edd@debian.org>

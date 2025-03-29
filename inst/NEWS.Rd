@@ -3,7 +3,15 @@
 \newcommand{\ghpr}{\href{https://github.com/eddelbuettel/tinythemes/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/eddelbuettel/tinythemes/issues/#1}{##1}}
 
-\section{Changes in spdl version 0.0.2 (2024-03-04)}{
+\section{Changes in tinythemes version 0.0.3 (2025-03-29)}{
+  \itemize{
+    \item Updated a badge URL in README.md
+    \item Updated manual pages with proper anchor links
+    \item Rewrote one example without pipe to not require minimum R version 
+  }
+}
+
+\section{Changes in tinythemes version 0.0.2 (2024-03-04)}{
   \itemize{
     \item Added continuous integrations action based on r2u
     \item Added \code{demo/} directory and a READNE.md
