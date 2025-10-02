@@ -5,7 +5,7 @@
 
 \section{Changes in tinythemes version 0.0.4 (2025-10-02)}{
   \itemize{
-    \item No longer \code{\link{}} to now-archived \pkg{hrbrthemes}
+    \item No longer \code{\\link{}} to now-archived \pkg{hrbrthemes}
   }
 }
 
