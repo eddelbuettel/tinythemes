@@ -3,6 +3,12 @@
 \newcommand{\ghpr}{\href{https://github.com/eddelbuettel/tinythemes/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/eddelbuettel/tinythemes/issues/#1}{##1}}
 
+\section{Changes in tinythemes version 0.0.4 (2025-10-02)}{
+  \itemize{
+    \item No longer \code{\link{}} to now-archived \pkg{hrbrthemes}
+  }
+}
+
 \section{Changes in tinythemes version 0.0.3 (2025-03-29)}{
   \itemize{
     \item Updated a badge URL in README.md

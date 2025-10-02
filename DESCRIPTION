@@ -1,8 +1,8 @@
 Package: tinythemes
 Type: Package
 Title: Lightweight Repackaging of 'Themes' for 'ggplot2'
-Version: 0.0.3
-Date: 2025-03-29
+Version: 0.0.4
+Date: 2025-10-02
 Authors@R: c(person(given = "Dirk", family = "Eddelbuettel",
                     role = c("aut", "cre"), email = "edd@debian.org",
                     comment = c(ORCID = "0000-0001-6419-907X")),
@@ -12,11 +12,12 @@ Description: Themes for 'ggplot2' are a convenient way to style plots. The 'hrbr
  contains a particularly nice one, but brings along a significant tail of dependencies. So this
  (currently experimental) package brings along just the 'theme_ipsum_rc' theme using the 'Roboto'
  'Condensed' font.  Should the font not be installed on your system, see the help in the package
- 'hrbrthemes' on how to install 'Roboto Condensed'.
+ 'hrbrthemes' on how to install 'Roboto Condensed'. Note that 'hrbrthemes' is now archived at
+ CRAN.
 URL: https://github.com/eddelbuettel/tinythemes
 BugReports: https://github.com/eddelbuettel/tinythemes/issues
 License: MIT + file LICENSE
 Imports: ggplot2
-Suggests: hrbrthemes, patchwork
-RoxygenNote: 7.3.2
+Suggests: patchwork
+RoxygenNote: 7.3.3
 Encoding: UTF-8
