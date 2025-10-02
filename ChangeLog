@@ -1,3 +1,8 @@
+2025-10-02  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/theme.R: No longer use \link{} for archived package `hrbrthemes`
+	* man/theme_ipsum_rc.Rd: Regenerated
+
 2025-03-29  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Release 0.0.3

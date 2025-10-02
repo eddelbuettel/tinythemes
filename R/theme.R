@@ -1,7 +1,7 @@
 #' A precise & pristine \link[ggplot2]{ggplot2} theme with opinionated defaults and an
 #' emphasis on typography
 #'
-#' You should consult the documentation of the \link[hrbrthemes]{hrbrthemes} package if
+#' You should consult the documentation of the \pkg{hrbrthemes} package if
 #' the font does not load properly. There is an option `hrbrthemes.loadfonts` which -- if
 #' set to `TRUE` -- will call `extrafont::loadfonts()` to register non-core fonts with R
 #' PDF & PostScript devices. If you are running under Windows, the package calls the same

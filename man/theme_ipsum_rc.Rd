@@ -77,7 +77,7 @@ A \link[ggplot2]{ggplot2}-compatible 'theme' data structure is returned for use 
 \link[ggplot2]{ggplot2} usage.
 }
 \description{
-You should consult the documentation of the \link[hrbrthemes]{hrbrthemes} package if
+You should consult the documentation of the \pkg{hrbrthemes} package if
 the font does not load properly. There is an option \code{hrbrthemes.loadfonts} which -- if
 set to \code{TRUE} -- will call \code{extrafont::loadfonts()} to register non-core fonts with R
 PDF & PostScript devices. If you are running under Windows, the package calls the same
