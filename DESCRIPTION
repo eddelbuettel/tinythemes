@@ -1,8 +1,8 @@
 Package: tinythemes
 Type: Package
 Title: Lightweight Repackaging of 'Themes' for 'ggplot2'
-Version: 0.0.4
-Date: 2025-10-02
+Version: 0.0.4.1
+Date: 2025-11-07
 Authors@R: c(person(given = "Dirk", family = "Eddelbuettel",
                     role = c("aut", "cre"), email = "edd@debian.org",
                     comment = c(ORCID = "0000-0001-6419-907X")),
