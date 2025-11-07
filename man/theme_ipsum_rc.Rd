@@ -108,7 +108,7 @@ ggplot(mtcars, aes(mpg, wt)) +
 if (Sys.info()[["sysname"]] == "Windows")
   update_geom_font_defaults(family=font_rc_light)
 
-ggplot(table(mpg$class), aes(x = Var1, y = Freq)) +
+ggplot(as.data.frame(table(mpg$class)), aes(x = Var1, y = Freq)) +
   geom_col() +
   geom_text(aes(label = Freq), nudge_y=3) +
   labs(x="Fuel efficiency (mpg)", y="Weight (tons)",
