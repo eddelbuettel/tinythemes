@@ -1,0 +1,42 @@
+# Run CI for R using https://eddelbuettel.github.io/r-ci/
+
+name: ci
+
+on:
+  push:
+  pull_request:
+  release:
+  workflow_dispatch:
+
+env:
+  _R_CHECK_FORCE_SUGGESTS_: FALSE
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    container:
+      image: rocker/r2u4ci
+
+    steps:
+      - Name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup
+        uses: eddelbuettel/github-actions/r-ci@master
+        with:
+          dev_version: 'TRUE'
+
+      - name: SessionInfo
+        run: R -q -e 'sessionInfo()'
+
+      - name: Dependencies
+        run: ./run.sh install_all
+
+      - name: Test
+        run: ./run.sh run_tests
+
+      #- name: Coverage
+      #  if: ${{ matrix.os == 'ubuntu-latest' }}
+      #  run: ./run.sh coverage
+      #  env:
+      #    CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
