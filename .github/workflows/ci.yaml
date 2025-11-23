@@ -18,7 +18,7 @@ jobs:
       image: rocker/r2u4ci
 
     steps:
-      - Name: Checkout
+      - name: Checkout
         uses: actions/checkout@v5
 
       - name: Setup
