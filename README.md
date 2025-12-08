@@ -1,7 +1,7 @@
 
 ## tinythemes -- Lightweight Repackaging of ggplot2 Themes
 
-[![CI](https://github.com/eddelbuettel/tinythemes/actions/workflows/r2u.yaml/badge.svg)](https://github.com/eddelbuettel/tinythemes/actions/workflows/r2u.yaml)
+[![CI](https://github.com/eddelbuettel/tinythemes/actions/workflows/ci.yaml/badge.svg)](https://github.com/eddelbuettel/tinythemes/actions/workflows/ci.yaml)
 [![License](https://img.shields.io/badge/License-MIT-orange.svg)](https://opensource.org/licenses/MIT)
 [![CRAN](https://www.r-pkg.org/badges/version/tinythemes)](https://cran.r-project.org/package=tinythemes)
 [![r-universe](https://eddelbuettel.r-universe.dev/badges/tinythemes)](https://eddelbuettel.r-universe.dev/tinythemes)

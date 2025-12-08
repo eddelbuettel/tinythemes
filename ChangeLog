@@ -3,6 +3,8 @@
 	* .github/workflows/ci.yaml: No longer need to select 'dev' version
 	of r-ci setup as this has become the r-ci default
 
+	* README.md: Correct CI badge links
+
 2025-11-23  Dirk Eddelbuettel  <edd@debian.org>
 
 	* .github/workflows/ci.yaml: Switch from older container-based r2u
